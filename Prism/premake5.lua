@@ -36,11 +36,6 @@ project "Prism"
         "Glad"
 	}
 
-	postbuildcommands
-	{
-		("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/PrismEditor/\"")
-	}    
-
 	filter "system:windows"
 		systemversion "latest"
 
@@ -54,6 +49,35 @@ project "Prism"
 		{
             "opengl32.lib"
 		}
+
+        postbuildcommands
+        {
+            ("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/PrismEditor/\"")
+        }
+
+    filter "system:macosx"
+        systemversion "10.0"
+
+        defines
+        {
+            "SPDLOG_DISABLE_TID_CACHING",
+            "SPDLOG_NO_TLS"
+        }
+
+        links
+		{
+			"CoreGraphics.framework",
+			"IOKit.framework",
+			"AppKit.framework",
+			"Cocoa.framework",
+            "OpenGL.framework"
+		}
+
+        postbuildcommands
+        {
+            ("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/\"")
+        }
+
 
 	filter "configurations:Debug"
 		defines "PM_DEBUG"

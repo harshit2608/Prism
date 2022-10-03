@@ -1,6 +1,6 @@
 # Prism
 
-Prism is a 3D game engien currently in WIP. Prism supports only windows for now.
+Prism is a 3D game engine currently in WIP.
 
 ## Getting Started
 
@@ -21,15 +21,18 @@ and place it inside `vendor/premake/bin`.
 
 <h4>Building ORE on windows</h4>
 
-Run the `scripts/Win-GenProject.bat` which will generate a Visual Studio 2022 solution.
+Run the `scripts\Win-GenProject.bat` which will generate a Visual Studio 2022 solution.
 
 **MSVC**
 Download MSVC from [here](https://visualstudio.microsoft.com/vs/features/cplusplus/)
 
+<h4>Building ORE on Mac</h4>
+
+**XCODE**
+
+Download Xcode-toolchain and clang, and run `scripts/Mac-GenProjects.sh` which will generate make files using gmake2.
+After that just run make command and build the build project.
+
 <h4>Building ORE on Linux</h4>
 
 **PROJECT IS UNDERDEVELOPMENT AND HASN'T BEEN TESTED ON LINUX!!**
-
-<h4>Building ORE on Mac</h4>
-
-**PROJECT IS UNDERDEVELOPMENT AND HASN'T BEEN TESTED ON MAC!!**
