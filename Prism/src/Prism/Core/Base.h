@@ -32,7 +32,7 @@
 #endif
 #endif
 #else
-#pragma Mystic DLL only supports Windows !
+#pragma Prism DLL only supports Windows !
 #define PM_API
 #endif
 

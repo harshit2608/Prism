@@ -100,7 +100,7 @@ project "Prism"
 	filter "configurations:Dist"
 		defines "PM_DIST"
 		runtime "Release"
-		optimize "full"
+		optimize "Full"
 
 		links
 		{

@@ -19,20 +19,20 @@ to clone the necessary submodules.
 After cloning the repository first download [premake](https://premake.github.io/download/)
 and place it inside `vendor/premake/bin`.
 
-<h4>Building ORE on windows</h4>
+<h4>Building Prism on windows</h4>
 
 Run the `scripts\Win-GenProject.bat` which will generate a Visual Studio 2022 solution.
 
 **MSVC**
 Download MSVC from [here](https://visualstudio.microsoft.com/vs/features/cplusplus/)
 
-<h4>Building ORE on Mac</h4>
+<h4>Building Prism on Mac</h4>
 
 **XCODE**
 
 Download Xcode-toolchain and clang, and run `scripts/Mac-GenProjects.sh` which will generate make files using gmake2.
 After that just run make command and build the build project.
 
-<h4>Building ORE on Linux</h4>
+<h4>Building Prism on Linux</h4>
 
 **PROJECT IS UNDERDEVELOPMENT AND HASN'T BEEN TESTED ON LINUX!!**
